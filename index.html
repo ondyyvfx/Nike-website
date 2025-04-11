@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="body_items">
+      <div class="item_1">
+        <img src="./images/6.png" alt="" />
+      </div>
+      <div class="item_2">
+        <img src="./images/logo.png" alt="" />
+      </div>
+      <div class="item_3">
+        <p>Just Do It</p>
+      </div>
+    </div>
+    <div class="container">
+      <nav>
+        <div class="left_nav">
+          <div class="nav_logo">
+            <img src="./images/logo.png" alt="" />
+          </div>
+          <div class="nav_menu">
+            <ul>
+              <li>
+                <a href="#" class="link">Home</a>
+                <div class="link_border"></div>
+              </li>
+              <li>
+                <a href="#" class="link">Kids</a>
+                <div class="link_border"></div>
+              </li>
+              <li>
+                <a href="#" class="link">Men</a>
+                <div class="link_border"></div>
+              </li>
+              <li>
+                <a href="#" class="link">Women</a>
+                <div class="link_border"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right_nav">
+          <div class="nav_cart_box">
+            <i class="bx bx-cart"></i>
+          </div>
+          <div class="dropdown">
+            <div class="meu_bars" onclick="myMenuFunction()">
+              <div class="menu_bars_btn">
+                <img src="./images/bar.png" class="bar_1" alt="" />
+                <img src="./images/bar.png" class="bar_2" alt="" />
+              </div>
+              <div class="nav_dropdown_menu" id="navDropdownMenu">
+                <ul>
+                  <li>
+                    <a href="#" class="link">Home</a>
+                    <div class="link_border"></div>
+                  </li>
+                  <li>
+                    <a href="#" class="link">Kids</a>
+                    <div class="link_border"></div>
+                  </li>
+                  <li>
+                    <a href="#" class="link">Men</a>
+                    <div class="link_border"></div>
+                  </li>
+                  <li>
+                    <a href="#" class="link">Women</a>
+                    <div class="link_border"></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- main -->
+      <main>
+        <!-- left colum -->
+        <div class="left-col">
+          <div class="shoe_title">
+            <p>Nike Air Jordan</p>
+          </div>
+          <div class="line"></div>
+          <div class="shoe-description">
+            <p>
+              Nike shoes combine cutting-edge technology with stylish designs,
+              providing unparalleled comfort and performance for athletes and
+              casual wearers alike.
+            </p>
+          </div>
+          <div class="cart">
+            <button class="cart_btn">Add to Cart</button>
+            <p class="price">$197.5</p>
+          </div>
+          <div class="shop_box">
+            <div class="shop_item_container">
+              <div class="shoe_img_box">
+                <img src="./images/2.png" class="shoe_img" alt="">
+              </div>
+              <div class="shoe_name_price">
+                <h3>Nike Air Max</h3>
+                <p class="price">$169.9</p>
+              </div>
+              <div class="add_to_shop">
+                <i class="bx bx-cart"></i>
+              </div>
+            </div>
+            <!-- second shoe -->
+            <div class="shop_item_container">
+              <div class="shoe_img_box">
+                <img src="./images/3.png" class="shoe_img" alt="">
+              </div>
+              <div class="shoe_name_price">
+                <h3>Nike Air Force</h3>
+                <p class="price">$134.9</p>
+              </div>
+              <div class="add_to_shop">
+                <i class="bx bx-cart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right column -->
+        <div class="right-col">
+          <img src="./images/1.png" class="featured_img">
+          <div class="shopping_cart_btn">
+            <i class="bx bx-cart"></i>
+          </div>
+        </div>
+      </main>
+      <section class="contact" id="contact">
+        <div class="social">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-youtube"></i></a>
+        </div>
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Our Company</a>
+        </div>
+        <p>If u have any questions call us (8 777 111 33-44)</p>
+        <p>&#169; Made by Ondyy(Alikhan) All Rights Reserved.</p>
+      </section>
+    </div>
+
+    <script>
+
+      function myMenuFunction() {
+        var i = document.getElementById("navDropdownMenu");
+
+        if(i.className === "nav_dropdown_menu"){
+          i.className += " responsive"
+        } else {
+          i.className = "nav_dropdown_menu"
+        }
+      }
+
+    </script>
+
+  </body>
+</html>
